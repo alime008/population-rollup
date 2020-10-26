@@ -5,7 +5,8 @@
 SCRIPT_PATH="./src/population.py" 
 INPUT_PATH="./insight_testsuite/tests/test_1/input/censustract-00-10.csv" 
 OUTPUT_PATH="./insight_testsuite/tests/test_1/output/report.csv"
-PYTHON=python3
+PYTHON=python
 
 # call script via the interrupter     
 $PYTHON $SCRIPT_PATH $INPUT_PATH $OUTPUT_PATH
+#"C:\Users\ali.mahdavi\Documents\GitHub\population-rollup\insight_testsuite\tests\test_1\input\censustract-00-10.csv"
