@@ -79,7 +79,7 @@ def population_rollup(input_path,output_path):
         AVGPPCHG.append(output[i][6])
 
     #Create the output file in the output directory.
-    with open(output_path, 'w', encoding="ISO-8859-1", newline='') as file:
+    with open(output_path, 'w', newline='') as file:
         wr = csv.writer(file)
         wr.writerows([["CBSA09","CBSA_T","GEOID", "POP00", "POP10", "AVGPPCHG"]])
         wr.writerows(zip(CBSA09,CBSA_T,GEOID,POP00,POP10,AVGPPCHG))
