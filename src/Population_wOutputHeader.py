@@ -81,6 +81,7 @@ def population_rollup(input_path,output_path):
     #Create the output file in the output directory.
     with open(output_path, 'w', newline='') as file:
         wr = csv.writer(file)
+        wr.writerows([["CBSA09","CBSA_T","GEOID", "POP00", "POP10", "AVGPPCHG"]])
         wr.writerows(zip(CBSA09,CBSA_T,GEOID,POP00,POP10,AVGPPCHG))
 
 population_rollup(sys.argv[1], sys.argv[2])
