@@ -5,7 +5,7 @@
 SCRIPT_PATH="./src/population.py" 
 INPUT_PATH="./input/censustract-00-10.csv" 
 OUTPUT_PATH="./output/report.csv"
-PYTHON=python
+PYTHON=python3
 
 # call script via the interrupter     
 $PYTHON $SCRIPT_PATH $INPUT_PATH $OUTPUT_PATH
