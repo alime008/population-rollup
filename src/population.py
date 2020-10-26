@@ -13,7 +13,7 @@ POP10=[]
 PPCHG=[]
 
 #import/input csv file from the directory. Use a list to record everyrow.
-with open ('input\censustract-00-10.csv','r') as file:
+with open ('.\input\censustract-00-10.csv','r') as file:
     my_reader =csv.reader(file, delimiter=',')
     for row in my_reader:
         items.append(row)
@@ -77,7 +77,7 @@ for i in range(0,len(output)):
     AVGPPCHG.append(output[i][6])
 
 #Create the output file in the output directory.
-with open('output\\report.csv', 'w', encoding="ISO-8859-1", newline='') as file:
+with open('.\output\\report.csv', 'w', encoding="ISO-8859-1", newline='') as file:
     wr = csv.writer(file)
     wr.writerows([["CBSA09","CBSA_T","GEOID", "POP00", "POP10", "AVGPPCHG"]])
     wr.writerows(zip(CBSA09,CBSA_T,GEOID,POP00,POP10,AVGPPCHG))
