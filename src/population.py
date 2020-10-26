@@ -1,6 +1,7 @@
-import csv
-import os
 #!/usr/bin/env python
+
+import csv
+
 
 #initialize list
 items=[]
